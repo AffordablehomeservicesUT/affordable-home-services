@@ -1,0 +1,270 @@
+/* ==========================================================================
+   Affordable Home Services — Global Styles
+   Brand tokens live here as CSS variables so every component pulls from
+   the same approved palette. Change a value here and it updates everywhere.
+   ========================================================================== */
+
+:root {
+  /* ---- Brand colors (Modern Premium palette) ---- */
+  --color-charcoal: #15181b;        /* near-black, primary dark surface */
+  --color-charcoal-soft: #1e2226;   /* slightly lighter charcoal for layered surfaces */
+  --color-nardo: #75787b;           /* Nardo Gray, matches the work truck */
+  --color-nardo-light: #a6a9ab;     /* lighter gray for secondary text on dark */
+  --color-white: #ffffff;
+  --color-offwhite: #f7f6f3;        /* warm off-white for light section backgrounds */
+  --color-gold: #b8905a;            /* warm metallic gold — accent only */
+  --color-gold-soft: #d9bd8f;       /* lighter gold for hover/subtle highlights */
+
+  /* ---- Text colors ---- */
+  --text-on-dark: #f5f4f1;
+  --text-on-dark-muted: #b9bcbe;
+  --text-on-light: #1c1f22;
+  --text-on-light-muted: #55585b;
+
+  /* ---- Typography ---- */
+  --font-display: var(--font-space-grotesk), "Segoe UI", Arial, sans-serif;
+  --font-body: var(--font-manrope), "Segoe UI", Arial, sans-serif;
+
+  /* ---- Spacing scale ---- */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.75rem;
+  --space-lg: 3rem;
+  --space-xl: 5rem;
+  --space-2xl: 7.5rem;
+
+  /* ---- Layout ---- */
+  --content-max: 1200px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+
+  color-scheme: light dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--color-white);
+  color: var(--text-on-light);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  margin: 0;
+  line-height: 1.1;
+  font-weight: 600;
+  color: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img, svg {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* Leaves room at the bottom of the page so the sticky mobile quote bar
+   never covers the final section or footer content. */
+@media (max-width: 959px) {
+  body {
+    padding-bottom: 64px;
+  }
+}
+
+/* Respect users who prefer little to no motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ---- Shared layout helpers used across sections ---- */
+
+.container {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+.section {
+  padding: var(--space-xl) 0;
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: var(--space-lg) 0;
+  }
+}
+
+.section--dark {
+  background-color: var(--color-charcoal);
+  color: var(--text-on-dark);
+}
+
+.section--light {
+  background-color: var(--color-offwhite);
+  color: var(--text-on-light);
+}
+
+.eyebrow {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--color-gold);
+  margin-bottom: var(--space-sm);
+}
+
+.section-heading {
+  font-size: clamp(1.8rem, 3.2vw, 2.6rem);
+  margin-bottom: var(--space-sm);
+}
+
+.section-copy {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  max-width: 640px;
+}
+
+.section--dark .section-copy {
+  color: var(--text-on-dark-muted);
+}
+
+.section--light .section-copy,
+.section-copy {
+  color: var(--text-on-light-muted);
+}
+
+/* ---- Buttons ---- */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.9rem 1.75rem;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+  white-space: nowrap;
+}
+
+.btn:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 2px;
+}
+
+.btn--gold {
+  background-color: var(--color-gold);
+  color: var(--color-charcoal);
+}
+
+.btn--gold:hover {
+  background-color: var(--color-gold-soft);
+}
+
+.btn--outline-dark {
+  background-color: transparent;
+  border-color: rgba(255, 255, 255, 0.4);
+  color: var(--text-on-dark);
+}
+
+.btn--outline-dark:hover {
+  border-color: var(--color-white);
+}
+
+.btn--outline-light {
+  background-color: transparent;
+  border-color: rgba(21, 24, 27, 0.3);
+  color: var(--text-on-light);
+}
+
+.btn--outline-light:hover {
+  border-color: var(--color-charcoal);
+}
+
+/* ---- Placeholder photography blocks ----
+   These stand in for real project photos until the actual image files are
+   added to /public/images. Each one is clearly labeled with the exact photo
+   that belongs there, per the approved Stage 4 photography plan. */
+
+.photo-placeholder {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 220px;
+  border-radius: var(--radius-md);
+  background: repeating-linear-gradient(
+    135deg,
+    var(--color-charcoal-soft),
+    var(--color-charcoal-soft) 12px,
+    #23272b 12px,
+    #23272b 24px
+  );
+  border: 1px dashed rgba(184, 144, 90, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-sm);
+  overflow: hidden;
+}
+
+.photo-placeholder__label {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: var(--color-gold-soft);
+  text-align: center;
+  max-width: 90%;
+}
+
+.photo-placeholder__label strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  color: var(--text-on-dark);
+  margin-bottom: 0.25rem;
+}
+
+/* Visually hidden but still available to screen readers */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
