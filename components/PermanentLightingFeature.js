@@ -1,4 +1,4 @@
-import PhotoPlaceholder from "./PhotoPlaceholder";
+import Image from "next/image";
 
 const USE_CASES = [
   "Christmas",
@@ -17,19 +17,34 @@ export default function PermanentLightingFeature() {
     <section className="permanent-feature section section--dark" aria-labelledby="permanent-heading">
       <div className="container permanent-feature__layout">
         <div className="permanent-feature__media">
-          <PhotoPlaceholder
-            label="Full-home dusk photo — blue/purple/white permanent lighting gradient (primary image)"
-            aspect="16 / 11"
-          />
+          <div className="permanent-feature__media-primary">
+            <Image
+              src="/images/permanent/dusk-full-home.jpg"
+              alt="Full home at dusk showing permanent lighting in a blue, purple, and white color gradient"
+              fill
+              sizes="(max-width: 960px) 100vw, 60vw"
+              style={{ objectFit: "cover", borderRadius: "var(--radius-md)" }}
+            />
+          </div>
           <div className="permanent-feature__media-secondary">
-            <PhotoPlaceholder
-              label="Daytime soffit close-up — shows discreet installation"
-              aspect="4 / 3"
-            />
-            <PhotoPlaceholder
-              label="Underside/track detail — long run of permanent lighting"
-              aspect="4 / 3"
-            />
+            <div className="permanent-feature__media-secondary-item">
+              <Image
+                src="/images/permanent/soffit-closeup.jpg"
+                alt="Daytime close-up of permanent lighting fixtures installed discreetly under the soffit"
+                fill
+                sizes="(max-width: 960px) 50vw, 30vw"
+                style={{ objectFit: "cover", borderRadius: "var(--radius-md)" }}
+              />
+            </div>
+            <div className="permanent-feature__media-secondary-item">
+              <Image
+                src="/images/permanent/track-detail.jpg"
+                alt="Close-up detail of a long run of permanent architectural lighting track"
+                fill
+                sizes="(max-width: 960px) 50vw, 30vw"
+                style={{ objectFit: "cover", borderRadius: "var(--radius-md)" }}
+              />
+            </div>
           </div>
         </div>
 

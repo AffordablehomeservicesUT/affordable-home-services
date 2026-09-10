@@ -1,4 +1,4 @@
-import PhotoPlaceholder from "./PhotoPlaceholder";
+import Image from "next/image";
 import RooflineDivider from "./RooflineDivider";
 
 const EMPHASIS_POINTS = [
@@ -38,20 +38,33 @@ export default function ChristmasFeature() {
 
         <div className="christmas-feature__media">
           <div className="christmas-feature__media-primary">
-            <PhotoPlaceholder
-              label="IMG_1523 — large upscale home, extensive warm-white roofline lighting (primary image)"
-              aspect="16 / 11"
+            <Image
+              src="/images/christmas/img-1523.jpg"
+              alt="Large upscale Utah home with extensive warm-white roofline Christmas lighting"
+              fill
+              sizes="(max-width: 960px) 100vw, 60vw"
+              style={{ objectFit: "cover", borderRadius: "var(--radius-md)" }}
             />
           </div>
           <div className="christmas-feature__media-secondary">
-            <PhotoPlaceholder
-              label="IMG_9306 — premium white/stone home, clean architectural lighting"
-              aspect="4 / 3"
-            />
-            <PhotoPlaceholder
-              label="IMG_1082 — modern luxury home, bright architectural roofline lighting"
-              aspect="4 / 3"
-            />
+            <div className="christmas-feature__media-secondary-item">
+              <Image
+                src="/images/christmas/img-9306.jpg"
+                alt="Premium white and stone Utah home with clean architectural Christmas lighting"
+                fill
+                sizes="(max-width: 960px) 50vw, 30vw"
+                style={{ objectFit: "cover", borderRadius: "var(--radius-md)" }}
+              />
+            </div>
+            <div className="christmas-feature__media-secondary-item">
+              <Image
+                src="/images/christmas/img-1082.jpg"
+                alt="Modern luxury Utah home with bright architectural roofline Christmas lighting"
+                fill
+                sizes="(max-width: 960px) 50vw, 30vw"
+                style={{ objectFit: "cover", borderRadius: "var(--radius-md)" }}
+              />
+            </div>
           </div>
         </div>
       </div>

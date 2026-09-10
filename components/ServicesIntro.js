@@ -1,3 +1,4 @@
+import Image from "next/image";
 import PhotoPlaceholder from "./PhotoPlaceholder";
 
 const SERVICES = [
@@ -5,13 +6,15 @@ const SERVICES = [
     title: "Christmas Lighting",
     copy: "Custom holiday lighting, professionally installed, maintained, and stored.",
     href: "/christmas-lighting",
-    photoLabel: "IMG_9306 or IMG_1082 — premium home with warm-white roofline lighting",
+    photoSrc: "/images/christmas/img-9306.jpg",
+    photoAlt: "Premium white and stone Utah home with warm-white roofline Christmas lighting",
   },
   {
     title: "Permanent Lighting",
     copy: "App-controlled architectural lighting for every season and occasion.",
     href: "/permanent-lighting",
-    photoLabel: "Full-home dusk photo — blue/purple/white permanent lighting gradient",
+    photoSrc: "/images/permanent/dusk-full-home.jpg",
+    photoAlt: "Home at dusk showing permanent lighting in a blue, purple, and white gradient",
   },
   {
     title: "Solar Services",
@@ -39,7 +42,17 @@ export default function ServicesIntro() {
           {SERVICES.map((service) => (
             <a key={service.title} href={service.href} className="service-card">
               <div className="service-card__media">
-                <PhotoPlaceholder label={service.photoLabel} aspect="4 / 3" />
+                {service.photoSrc ? (
+                  <Image
+                    src={service.photoSrc}
+                    alt={service.photoAlt}
+                    fill
+                    sizes="(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 25vw"
+                    style={{ objectFit: "cover", borderRadius: "var(--radius-md)" }}
+                  />
+                ) : (
+                  <PhotoPlaceholder label={service.photoLabel} aspect="4 / 3" />
+                )}
               </div>
               <h3 className="service-card__title">{service.title}</h3>
               <p className="service-card__copy">{service.copy}</p>

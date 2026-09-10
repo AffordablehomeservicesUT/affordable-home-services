@@ -1,4 +1,4 @@
-import PhotoPlaceholder from "./PhotoPlaceholder";
+import Image from "next/image";
 
 /**
  * HERO PHOTO — TWO APPROVED FINALISTS
@@ -7,11 +7,16 @@ import PhotoPlaceholder from "./PhotoPlaceholder";
  */
 const HERO_IMAGE = "IMG_1015";
 
-const HERO_IMAGE_LABELS = {
+const HERO_IMAGE_SRC = {
+  IMG_1015: "/images/hero/img-1015.jpg",
+  PREMIUM_4: "/images/hero/premium-4.jpg",
+};
+
+const HERO_IMAGE_ALT = {
   IMG_1015:
-    "IMG_1015 — upscale dark modern home at blue hour, warm-white architectural roofline lighting (Finalist A)",
+    "Upscale dark modern Utah home at blue hour with warm-white architectural roofline lighting",
   PREMIUM_4:
-    "Premium-4 — premium white home with mountain backdrop, warm-white roofline lighting (Finalist B)",
+    "Premium white Utah home with mountain backdrop and warm-white roofline lighting",
 };
 
 export default function Hero() {
@@ -43,7 +48,14 @@ export default function Hero() {
         </div>
 
         <div className="hero__media">
-          <PhotoPlaceholder label={HERO_IMAGE_LABELS[HERO_IMAGE]} aspect="4 / 5" />
+          <Image
+            src={HERO_IMAGE_SRC[HERO_IMAGE]}
+            alt={HERO_IMAGE_ALT[HERO_IMAGE]}
+            fill
+            priority
+            sizes="(max-width: 900px) 100vw, 50vw"
+            style={{ objectFit: "cover", borderRadius: "var(--radius-md)" }}
+          />
         </div>
       </div>
     </section>
