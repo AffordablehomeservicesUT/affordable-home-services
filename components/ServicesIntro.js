@@ -6,14 +6,14 @@ const SERVICES = [
     title: "Christmas Lighting",
     copy: "Custom holiday lighting, professionally installed, maintained, and stored.",
     href: "/christmas-lighting",
-    photoSrc: "/images/christmas/img-9306.jpg",
+    photoSrc: "/images/Christmas/img-9306.jpg",
     photoAlt: "Premium white and stone Utah home with warm-white roofline Christmas lighting",
   },
   {
     title: "Permanent Lighting",
     copy: "App-controlled architectural lighting for every season and occasion.",
     href: "/permanent-lighting",
-    photoSrc: "/images/permanent/dusk-full-home.jpg",
+    photoSrc: "/images/Permanent/dusk-full-home.jpg",
     photoAlt: "Home at dusk showing permanent lighting in a blue, purple, and white gradient",
   },
   {

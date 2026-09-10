@@ -6,12 +6,12 @@ import PhotoPlaceholder from "./PhotoPlaceholder";
 // should represent every service fairly once solar/exterior photography
 // is supplied, per the approved Stage 4 plan.
 const PREVIEW_ITEMS = [
-  { src: "/images/christmas/img-1523.jpg", alt: "Large upscale Utah home with Christmas roofline lighting" },
-  { src: "/images/christmas/img-9306.jpg", alt: "Premium white and stone Utah home with Christmas lighting" },
-  { src: "/images/christmas/img-1082.jpg", alt: "Modern luxury Utah home with Christmas roofline lighting" },
-  { src: "/images/permanent/dusk-full-home.jpg", alt: "Home at dusk with blue, purple, and white permanent lighting" },
-  { src: "/images/permanent/soffit-closeup.jpg", alt: "Daytime close-up of permanent lighting under the soffit" },
-  { src: "/images/permanent/track-detail.jpg", alt: "Close-up of a long run of permanent lighting track" },
+  { src: "/images/Christmas/img-1523.JPG", alt: "Large upscale Utah home with Christmas roofline lighting" },
+  { src: "/images/Christmas/img-9306.jpg", alt: "Premium white and stone Utah home with Christmas lighting" },
+  { src: "/images/Christmas/img-1082.JPEG", alt: "Modern luxury Utah home with Christmas roofline lighting" },
+  { src: "/images/Permanent/dusk-full-home.jpg", alt: "Home at dusk with blue, purple, and white permanent lighting" },
+  { src: "/images/Permanent/soffit-closeup.jpg", alt: "Daytime close-up of permanent lighting under the soffit" },
+  { src: "/images/Permanent/track-detail.jpg", alt: "Close-up of a long run of permanent lighting track" },
   { label: "Solar panel cleaning photo — to be supplied" },
   { label: "Exterior cleaning photo — to be supplied" },
 ];

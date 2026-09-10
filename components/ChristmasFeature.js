@@ -39,7 +39,7 @@ export default function ChristmasFeature() {
         <div className="christmas-feature__media">
           <div className="christmas-feature__media-primary">
             <Image
-              src="/images/christmas/img-1523.jpg"
+              src="/images/Christmas/img-1523.JPG"
               alt="Large upscale Utah home with extensive warm-white roofline Christmas lighting"
               fill
               sizes="(max-width: 960px) 100vw, 60vw"
@@ -49,7 +49,7 @@ export default function ChristmasFeature() {
           <div className="christmas-feature__media-secondary">
             <div className="christmas-feature__media-secondary-item">
               <Image
-                src="/images/christmas/img-9306.jpg"
+                src="/images/Christmas/img-9306.jpg"
                 alt="Premium white and stone Utah home with clean architectural Christmas lighting"
                 fill
                 sizes="(max-width: 960px) 50vw, 30vw"
@@ -58,7 +58,7 @@ export default function ChristmasFeature() {
             </div>
             <div className="christmas-feature__media-secondary-item">
               <Image
-                src="/images/christmas/img-1082.jpg"
+                src="/images/Christmas/img-1082.JPEG"
                 alt="Modern luxury Utah home with bright architectural roofline Christmas lighting"
                 fill
                 sizes="(max-width: 960px) 50vw, 30vw"

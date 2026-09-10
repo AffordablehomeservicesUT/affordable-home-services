@@ -19,7 +19,7 @@ export default function PermanentLightingFeature() {
         <div className="permanent-feature__media">
           <div className="permanent-feature__media-primary">
             <Image
-              src="/images/permanent/dusk-full-home.jpg"
+              src="/images/Permanent/dusk-full-home.jpg"
               alt="Full home at dusk showing permanent lighting in a blue, purple, and white color gradient"
               fill
               sizes="(max-width: 960px) 100vw, 60vw"
@@ -29,7 +29,7 @@ export default function PermanentLightingFeature() {
           <div className="permanent-feature__media-secondary">
             <div className="permanent-feature__media-secondary-item">
               <Image
-                src="/images/permanent/soffit-closeup.jpg"
+                src="/images/Permanent/soffit-closeup.jpg"
                 alt="Daytime close-up of permanent lighting fixtures installed discreetly under the soffit"
                 fill
                 sizes="(max-width: 960px) 50vw, 30vw"
@@ -38,7 +38,7 @@ export default function PermanentLightingFeature() {
             </div>
             <div className="permanent-feature__media-secondary-item">
               <Image
-                src="/images/permanent/track-detail.jpg"
+                src="/images/Permanent/track-detail.jpg"
                 alt="Close-up detail of a long run of permanent architectural lighting track"
                 fill
                 sizes="(max-width: 960px) 50vw, 30vw"

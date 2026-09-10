@@ -8,8 +8,8 @@ import Image from "next/image";
 const HERO_IMAGE = "IMG_1015";
 
 const HERO_IMAGE_SRC = {
-  IMG_1015: "/images/hero/img-1015.jpg",
-  PREMIUM_4: "/images/hero/premium-4.jpg",
+  IMG_1015: "/images/HERO/img-1015.JPEG",
+  PREMIUM_4: "/images/HERO/premium-4.JPG",
 };
 
 const HERO_IMAGE_ALT = {
