@@ -24,6 +24,13 @@ const manrope = Manrope({
 
 export const metadata = {
   metadataBase: new URL("https://affordableservicesut.com"),
+  icons: {
+    icon: [
+      { url: "/images/logo/AHS-Favicon-512.png", sizes: "512x512", type: "image/png" },
+      { url: "/images/logo/AHS-Favicon-64.png", sizes: "64x64", type: "image/png" },
+    ],
+    apple: "/images/logo/AHS-Favicon-512.png",
+  },
   title: {
     default: "Affordable Home Services | Utah Christmas Lighting, Permanent Lighting, Solar & Exterior Cleaning",
     template: "%s | Affordable Home Services",

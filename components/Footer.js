@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const SERVICE_LINKS = [
   { label: "Christmas Lighting", href: "/christmas-lighting" },
   { label: "Permanent Lighting", href: "/permanent-lighting" },
@@ -19,9 +21,14 @@ export default function Footer() {
     <footer className="site-footer">
       <div className="container site-footer__grid">
         <div>
-          <p className="site-footer__logo">
-            Affordable <span>Home Services</span>
-          </p>
+          <Image
+            src="/images/logo/AHS-Logo-Stacked-Dark.png"
+            alt="Affordable Home Services"
+            width={160}
+            height={140}
+            style={{ height: "72px", width: "auto" }}
+            className="site-footer__logo-img"
+          />
           <p className="site-footer__domain">AffordableServicesUT.com</p>
           <p className="site-footer__placeholder">
             [Service area — placeholder]

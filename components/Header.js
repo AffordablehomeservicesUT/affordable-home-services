@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 const NAV_LINKS = [
   { label: "Home", href: "/" },
@@ -19,7 +20,14 @@ export default function Header() {
     <header className="site-header">
       <div className="container site-header__row">
         <a href="/" className="site-header__logo">
-          Affordable <span>Home Services</span>
+          <Image
+            src="/images/logo/AHS-Logo-Horizontal-Dark.png"
+            alt="Affordable Home Services"
+            width={220}
+            height={48}
+            priority
+            style={{ height: "40px", width: "auto" }}
+          />
         </a>
 
         {/* Desktop navigation */}

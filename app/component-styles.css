@@ -47,15 +47,9 @@
         }
 
         .site-header__logo {
-          font-family: var(--font-display);
-          font-weight: 700;
-          font-size: 1.15rem;
-          color: var(--text-on-dark);
-          letter-spacing: 0.01em;
-        }
-
-        .site-header__logo span {
-          color: var(--color-gold);
+          display: flex;
+          align-items: center;
+          flex-shrink: 0;
         }
 
         .site-header__nav {
@@ -575,15 +569,8 @@
           gap: var(--space-lg);
         }
 
-        .site-footer__logo {
-          font-family: var(--font-display);
-          font-weight: 700;
-          font-size: 1.1rem;
-          color: var(--text-on-dark);
-        }
-
-        .site-footer__logo span {
-          color: var(--color-gold);
+        .site-footer__logo-img {
+          margin-bottom: 0.5rem;
         }
 
         .site-footer__domain {
