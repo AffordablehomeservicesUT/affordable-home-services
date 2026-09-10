@@ -7,7 +7,7 @@ import PhotoPlaceholder from "./PhotoPlaceholder";
 // is supplied, per the approved Stage 4 plan.
 const PREVIEW_ITEMS = [
   { src: "/images/Christmas/img-1523.JPG", alt: "Large upscale Utah home with Christmas roofline lighting" },
-  { src: "/images/Christmas/img-9306.jpg", alt: "Premium white and stone Utah home with Christmas lighting" },
+  { src: "/images/Christmas/img-9306.jpeg", alt: "Premium white and stone Utah home with Christmas lighting" },
   { src: "/images/Christmas/img-1082.JPEG", alt: "Modern luxury Utah home with Christmas roofline lighting" },
   { src: "/images/Permanent/dusk-full-home.jpg", alt: "Home at dusk with blue, purple, and white permanent lighting" },
   { src: "/images/Permanent/soffit-closeup.jpg", alt: "Daytime close-up of permanent lighting under the soffit" },

@@ -6,7 +6,7 @@ const SERVICES = [
     title: "Christmas Lighting",
     copy: "Custom holiday lighting, professionally installed, maintained, and stored.",
     href: "/christmas-lighting",
-    photoSrc: "/images/Christmas/img-9306.jpg",
+    photoSrc: "/images/Christmas/img-9306.jpeg",
     photoAlt: "Premium white and stone Utah home with warm-white roofline Christmas lighting",
   },
   {

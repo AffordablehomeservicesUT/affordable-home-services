@@ -49,7 +49,7 @@ export default function ChristmasFeature() {
           <div className="christmas-feature__media-secondary">
             <div className="christmas-feature__media-secondary-item">
               <Image
-                src="/images/Christmas/img-9306.jpg"
+                src="/images/Christmas/img-9306.jpeg"
                 alt="Premium white and stone Utah home with clean architectural Christmas lighting"
                 fill
                 sizes="(max-width: 960px) 50vw, 30vw"
